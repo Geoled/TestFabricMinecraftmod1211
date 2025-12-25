@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "pisunium",
+	"version": "${version}",
+	"name": "Pisunium",
+	"description": "Sex 2",
+	"authors": [
+		"Geoled"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pisunium/Peter.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.arnold.pisunium.Pisunium"
+		],
+		"fabric-datagen": [
+			"com.arnold.pisunium.PisuniumDataGenerator"
+		],
+		"client": [
+
+			"com.arnold.pisunium.PisuniumModClient"
+
+		]
+	},
+	"mixins": [
+		"pisunium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
